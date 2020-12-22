@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inciwiki", "Inciwiki.csproj", "{C90B7E06-836F-48DC-81F8-ABCF8BA93CDA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inciwiki", "Inciwiki.csproj", "{B6C89C71-C732-4DAC-8D0A-84A266819A0A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C90B7E06-836F-48DC-81F8-ABCF8BA93CDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C90B7E06-836F-48DC-81F8-ABCF8BA93CDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C90B7E06-836F-48DC-81F8-ABCF8BA93CDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C90B7E06-836F-48DC-81F8-ABCF8BA93CDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6C89C71-C732-4DAC-8D0A-84A266819A0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6C89C71-C732-4DAC-8D0A-84A266819A0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6C89C71-C732-4DAC-8D0A-84A266819A0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6C89C71-C732-4DAC-8D0A-84A266819A0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {41C6013D-A908-4BB6-83B0-C75D2794E578}
+		SolutionGuid = {31BB5F6F-5E74-4D63-8845-78767AB23874}
 	EndGlobalSection
 EndGlobal
