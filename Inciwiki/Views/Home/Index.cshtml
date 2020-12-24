@@ -1,8 +1,94 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<!-- Slider Area Start-->
+<div class="slider-area">
+    <div class="slider-active">
+        <div class="single-slider slider-height d-flex align-items-center">
+            <div class="container">
+                <div class="row d-flex align-items-center">
+                    <div class="col-lg-5 d-none d-xl-block">
+                        <div class="hero__img hero__img2 " data-animation="fadeInLeft" data-delay="1s">
+                            <img src="~/img/hero/about_hero.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-md-9 ">
+                        <div class="hero__caption hero__caption2">
+                            <h1 data-animation="fadeInRight" data-delay=".4s">Bilim Ve Bakımın<br> Buluştuğu Noktadayız</h1><!-- Hero-btn -->
+                            <div class="hero__btn" data-animation="fadeInRight" data-delay=".8s">
+                                <a asp-area="" asp-controller="Home" asp-action="About" class="btn hero-btn">INCIWIKI Nedir?</a>
+                            </div>
+                        </div>
+                    </div>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slider Area End-->
 </div>
+
+<!--Choose Best start-->
+<div class="choose-best choose-padding">
+    <div class="container">
+        <!-- Section-tittle -->
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-7">
+                <div class="section-tittle text-center">
+                    <h2> En Ünlü 3 İçerik </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="single-choose text-center mb-30">
+                    <div class="do-icon">
+                        <img src="~/img/ingredients/HyaluronicAcid.png" alt="" style="width:300px;">
+                    </div>
+                    <div class="do-caption">
+                        <h4>Hyaluronic Acid</h4>
+                        <ul>
+                            <li>Increase traffic 50%</li>
+                            <li>Social Media Marketing</li>
+                            <li>10 Free Optimization</li>
+                            <li>24/7  support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-choose active text-center mb-30">
+                    <div class="do-icon">
+                        <img src="~/img/ingredients/CentellaAsiatica.png" alt="" style="width:300px;">
+                    </div>
+                    <div class="do-caption">
+                        <h4>Centella Asiatica</h4>
+                        <ul>
+                            <li>Increase traffic 50%</li>
+                            <li>Social Media Marketing</li>
+                            <li>10 Free Optimization</li>
+                            <li>24/7  support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="single-choose text-center mb-30">
+                    <div class="do-icon">
+                        <img src="~/img/ingredients/Niacinamide.png" alt="" style="width:300px;">
+                    </div>
+                    <div class="do-caption">
+                        <h4>Niacinamide</h4>
+                        <ul>
+                            <li>Increase traffic 50%</li>
+                            <li>Social Media Marketing</li>
+                            <li>10 Free Optimization</li>
+                            <li>24/7  support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Choose Best do End-->
