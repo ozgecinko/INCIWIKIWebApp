@@ -23,7 +23,7 @@ namespace Inciwiki.Controllers
             return View();
         }
 
-        public IActionResult About()
+        public IActionResult Privacy()
         {
             return View();
         }
