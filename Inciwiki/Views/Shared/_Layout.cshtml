@@ -8,16 +8,7 @@
     <link rel="stylesheet" href="~/css/site.css" />
 
     <!-- CSS here -->
-    <link rel="stylesheet" href="~/css/bootstrap.min.css">
-    <link rel="stylesheet" href="~/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="~/css/flaticon.css">
-    <link rel="stylesheet" href="~/css/slicknav.css">
-    <link rel="stylesheet" href="~/css/animate.min.css">
-    <link rel="stylesheet" href="~/css/magnific-popup.css">
-    <link rel="stylesheet" href="~/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="~/css/themify-icons.css">
-    <link rel="stylesheet" href="~/css/slick.css">
-    <link rel="stylesheet" href="~/css/nice-select.css">
+    <link rel="stylesheet" href="~/css/responsive.css">
     <link rel="stylesheet" href="~/css/style.css">
 </head>
 <body>
@@ -36,7 +27,7 @@
                         </div>
                         <div class="col-xl-6 col-lg-6 col-md-6">
                             <!-- Main-menu -->
-                            <div class="main-menu f-right d-none d-lg-block">
+                            <div class="main-menu f-right d-lg-block">
                                 <nav>
                                     <ul id="navigation">
                                         <li><a asp-area="" asp-controller="Home" asp-action="Index">Ana Sayfa</a></li>
@@ -57,17 +48,24 @@
                                                 <li><a asp-area="" asp-controller="Home" asp-action="Index">Güneş Koruması</a></li>
                                             </ul>
                                         </li>
+                                        <li>
+                                            <a asp-area="" asp-controller="Home" asp-action="Index">Admin</a>
+                                            <ul class="submenu">
+                                                <li><a asp-area="" asp-controller="Home" asp-action="Index">İçerikler</a></li>
+                                                <li><a asp-area="" asp-controller="Home" asp-action="Index">İhtiyaçlar</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </nav>
                             </div>
                         </div>
                         <div class="col-xl-2 col-lg-2 col-md-2">
-                            <div class="header-right-btn f-right d-none d-md-block">
+                            <div class="header-right-btn f-right d-md-block">
                                 <a class="btn header-btn" asp-area="" asp-controller="Home" asp-action="Index">Giriş Yap</a>
                             </div>
                         </div>
                         <div class="col-xl-2 col-lg-2 col-md-2">
-                            <div class="header-right-btn f-right d-none d-lg-block">
+                            <div class="header-right-btn f-right d-lg-block">
                                 <a class="btn header-btn" asp-area="" asp-controller="Home" asp-action="Index">Üye Ol</a>
                             </div>
                         </div>
@@ -79,7 +77,7 @@
     </header>
 
     <main>
-          @RenderBody()
+        @RenderBody()
 
     </main>
 
@@ -100,8 +98,10 @@
                         <div class="col-lg-6 col-md-6 col-sm-8">
                             <div class="footer-tittle">
                                 <div class="footer-pera">
-                                    <p class="info1">221B Baker Street, P.O Box 353 Park <br> Road, USA - 215431</p>
-                                    <p class="info2">info@yourdomain.com</p>
+                                    <p>
+                                        Author: Hege Refsnes<br>
+                                        <a href="mailto:hege@example.com">hege@example.com</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
