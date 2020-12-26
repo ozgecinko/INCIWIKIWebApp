@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <UserSecretsId>aspnet-Inciwiki-620173CA-2591-4C52-98B6-C7D16B15AD4C</UserSecretsId>
+    <UserSecretsId>aspnet-Inciwiki-9A23D810-2BA8-47D2-855A-9DA421DF8832</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,10 +11,6 @@
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.8" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Components\" />
   </ItemGroup>
 
 </Project>

@@ -1,30 +1,42 @@
 ﻿@{
     ViewData["Title"] = "INCIWIKI";
 }
+<h1>@ViewData["Title"]</h1>
 
-<div class="container">
-    <div class="row">
-        <h1>@ViewData["Title"]</h1>
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+    <div class="container">
 
-
+        <div class="row justify-content-between">
+            <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
+                <img src="~/img/logo/logo.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 pt-5 pt-lg-0">
+                <h3>Bilim ve bakımın buluştuğu noktaya hoş geldin!</h3>
                 <p>
                     INCIWIKI, popüler cilt bakım ürünlerinin içerikleri hakkında bilgi veren ve kullanıcıların bu
-                    içerikler hakkında yorum yapmasına, içerikleri oylamasına olanak sağlayan bir web uygulamasıdır.
+                    bileşenler hakkında yorum yapmasına olanak tanıyan bir web uygulamasıdır.
                 </p>
-
-                <h1 style="color:#ee82ee;">
-                    INCI'yi Daha Önce Duydunuz Mu?
-                </h1>
-                <p>
-                    INCI, Kozmetik Bileşenlerin Uluslararası İsimlendirilmesi isminin kısaltımıdır. INCI isimleri
-                    Amerika Birleşik Devletleri, Avrupa Birliği, Çin, Japonya ve diğer birçok ülkede kozmetik
-                    ürün etiketlerinde içeriklerin listelenmesi için kullanılmaktadır. Birkaç istisna dışında, tüm
-                    ülkelerdeki INCI etiketleme adları aynıdır.
-                </p>
-
-                <p style="color: #2b4b80;">
-                    INCIWIKI üzerindeki cilt bakım içerikleri, INCI isimleriyle yazılmıştır.
-                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <i class="bx bx-receipt"></i>
+                        <h4>INCI'yi daha önce duymuş muydunuz?</h4>
+                        <p>
+                            INCI, Kozmetik Bileşenlerin Uluslararası İsimlendirilmesi isminin kısaltımıdır. INCI isimleri
+                            Amerika Birleşik Devletleri, Avrupa Birliği, Çin, Japonya ve diğer birçok ülkede kozmetik
+                            ürün etiketlerinde içeriklerin listelenmesi için kullanılmaktadır. Birkaç istisna dışında, tüm
+                            ülkelerdeki INCI etiketleme adları aynıdır.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <i class="bx bx-cube-alt"></i>
+                        <h4>INCIWIKI</h4>
+                        <p>INCIWIKI üzerindeki cilt bakım içerikleri, INCI isimleriyle yazılmıştır. Sen de bu içeriklere göz gezdirebilir,
+                        içerikleri oylayabilir ve cilt tipine göre topluluğumuzda yerini alabilirsin. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
- </div>
+</section><!-- End About Section -->
