@@ -2,7 +2,81 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1">
+                <h1>Bilim ve bakımın buluştuğu noktaya hoş geldin!</h1>
+                <h2>
+                    Cilt bakım meraklılarının en bilimsel ve doğru bilgileri bulduğu INCIWIKI, her geçen gün büyümeye devam ediyor.
+                </h2>
+                <a asp-area="" asp-controller="Home" asp-action="About" class="btn-get-started scrollto">INCIWIKI</a>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2 hero-img">
+                <img src="~/img/logo/logo.png" class="img-fluid animated" alt="">
+            </div>
+        </div>
+    </div>
+
+</section><!-- End Hero -->
+
+<!-- ======= Team Section ======= -->
+<section id="team" class="team">
+    <div class="container">
+
+        <div class="section-title">
+            <h2>Popüler İçerikler</h2>
+        </div>
+
+        <div class="row">
+
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="member">
+                    <img src="~/img/ingredients/BHA.png" class="img-fluid" alt="">
+                    <div class="member-info">
+                        <div class="member-info-content">
+                            <h4>BHA</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-3 col-lg-4 col-md-6">
+                <div class="member">
+                    <img src="~/img/ingredients/HyaluronicAcid.png" class="img-fluid" alt="">
+                    <div class="member-info">
+                        <div class="member-info-content">
+                            <h4>Hyaluronic Acid</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="member">
+                        <img src="~/img/ingredients/Allantoin.png" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Allantoin</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div class="member">
+                        <img src="~/img/ingredients/CentellaAsiatica.png" class="img-fluid" alt="">
+                        <div class="member-info">
+                            <div class="member-info-content">
+                                <h4>Centella Asiatica</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            
+        </div>
+    </div>
+</section><!-- End Team Section -->
