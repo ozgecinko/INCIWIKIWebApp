@@ -17,10 +17,13 @@ namespace Inciwiki.Controllers
             _context = context;
         }
 
+
         public async Task<IActionResult> Akne()
         {
-            var applicationDbContext = _context.IhtiyacIcerik.Include(i => i.Icerik).Include(i => i.Ihtiyac);
-            return View(await applicationDbContext.ToListAsync());
+
+            var db = _context.IhtiyacIcerik.Include(i => i.Icerik).Include(i => i.Ihtiyac);
+            var akneKarsiti = await db.OrderBy(x => x.IhtiyacId == 1).ToListAsync();     
+            return View(akneKarsiti);
         }
 
         public async Task<IActionResult> Antibakteriyel()
@@ -76,4 +79,5 @@ namespace Inciwiki.Controllers
             return View(await applicationDbContext.ToListAsync());
         }
     }
+
 }

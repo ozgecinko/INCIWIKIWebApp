@@ -1,4 +1,9 @@
 ﻿@model IEnumerable<Inciwiki.Models.IhtiyacIcerik>
+
+@{
+    ViewData["Title"] = "Akne Karşıtı";
+}
+
 <!-- ======= Services Section ======= -->
 <section id="services" class="services section-bg">
     <div class="container">
@@ -7,25 +12,26 @@
             <h2>Akne Karşıtı</h2>
         </div>
 
-        <div class="row">
-            @foreach (var item in Model)
+        @foreach (var item in Model)
+        {
+            @if (item.Ihtiyac.IhtiyacAdi == "Akne Karşıtı")
             {
-                <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
-                    @if (item.Ihtiyac.IhtiyacAdi == "Akne Karşıtı")
-                    {
+                <div class="row">
+
+                    <div class="col">
+
+
                         <div class="icon-box">
                             <div class="icon"><img src="@Url.Content(item.Icerik.IcerikResmi)" class="d-block w-50" asp-append-version="true" /></div>
                             <h4 class="title"><a href=""> @Html.DisplayFor(modelItem => item.Icerik.IcerikAdi)</a></h4>
                             <p class="description">@Html.DisplayFor(modelItem => item.Icerik.Aciklamasi)</p>
                         </div>
-                    }
-                    else
-                    {
-                        continue;
-                    }
+                        
+
+                    </div>
+             
                 </div>
+                }
             }
         </div>
-
-    </div>
 </section><!-- End Services Section -->

@@ -201,7 +201,6 @@ C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netco
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\IhtiyacIcerik\Edit.cshtml.g.cs
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\IhtiyacIcerik\Index.cshtml.g.cs
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\Icerik\List.cshtml.g.cs
-C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Ihtiyaclar.cshtml.g.cs
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\Problem\Akne.cshtml.g.cs
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\Problem\Antibakteriyel.cshtml.g.cs
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\Problem\Antioksidan.cshtml.g.cs
@@ -212,3 +211,4 @@ C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netco
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\Problem\Nemlendirici.cshtml.g.cs
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\Problem\Surfaktan.cshtml.g.cs
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\Problem\Yatistirici.cshtml.g.cs
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\IhtiyacIcerik\List.cshtml.g.cs

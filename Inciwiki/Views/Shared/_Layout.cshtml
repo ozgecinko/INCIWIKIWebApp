@@ -38,7 +38,7 @@
                     <li><a asp-area="" asp-controller="Icerik" asp-action="List">İçerikler</a></li>
 
                     <li class="drop-down">
-                        <a href="">İhtiyaçlar</a>
+                        <a asp-area="" asp-controller="IhtiyacIcerik" asp-action="List">İhtiyaçlar</a>
                         <ul>
                             <li><a asp-area="" asp-controller="Problem" asp-action="Akne">Akne Karşıtı</a></li>
                             <li><a asp-area="" asp-controller="Problem" asp-action="Antibakteriyel">Antibakteriyel</a></li>
@@ -54,16 +54,24 @@
                     </li>
 
 
-                    <li class="drop-down">
-                        <a href="">Admin</a>
-                        <ul>
-                            <li><a asp-area="" asp-controller="Icerik" asp-action="Index">İçerikler</a></li>
-                            <li><a asp-area="" asp-controller="Ihtiyac" asp-action="Index">İhtiyaçlar</a></li>
-                            <li><a asp-area="" asp-controller="IhtiyacIcerik" asp-action="Index">İhtiyaçların İçerikleri</a></li>
-                        </ul>
-                    </li>
-                    <li class="get-started"><a href="#about">Giriş Yap</a></li>
-                    <li class="get-started"><a href="#about">Üye Ol</a></li>
+
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        if (User.IsInRole("Admin"))
+                        {
+                            <li class="drop-down">
+                                <a href="">Admin</a>
+                                <ul>
+                                    <li><a asp-area="" asp-controller="Icerik" asp-action="Index">İçerikler</a></li>
+                                    <li><a asp-area="" asp-controller="Ihtiyac" asp-action="Index">İhtiyaçlar</a></li>
+                                    <li><a asp-area="" asp-controller="IhtiyacIcerik" asp-action="Index">İhtiyaçların İçerikleri</a></li>
+                                </ul>
+                            </li>
+                        }
+                    }
+
+                    <partial name="_LoginPartial" />
+
                 </ul>
             </nav><!-- .nav-menu -->
 
