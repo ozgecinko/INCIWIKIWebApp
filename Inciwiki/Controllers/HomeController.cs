@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Inciwiki.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Inciwiki.Controllers
 {
@@ -19,6 +20,12 @@ namespace Inciwiki.Controllers
         }
 
         public IActionResult Index()
+        {
+            return View();
+        }
+
+        [Authorize]
+        public IActionResult Secret()
         {
             return View();
         }

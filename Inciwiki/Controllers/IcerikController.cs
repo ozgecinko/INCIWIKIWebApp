@@ -29,6 +29,12 @@ namespace Inciwiki.Controllers
         {
             return View(await _context.Icerik.ToListAsync());
         }
+        
+        // GET: Icerik List
+        public async Task<IActionResult> List()
+        {
+            return View(await _context.Icerik.ToListAsync());
+        }
 
         // GET: Icerik/Details/5
         public async Task<IActionResult> Details(int? id)

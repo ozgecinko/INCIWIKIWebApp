@@ -13,6 +13,10 @@ body {
   color: #212529;
 }
 
+.checked {
+    color: orange;
+}
+
 a {
   color: #eb5d1e;
 }

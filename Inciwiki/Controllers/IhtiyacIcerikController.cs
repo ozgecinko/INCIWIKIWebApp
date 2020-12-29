@@ -26,6 +26,7 @@ namespace Inciwiki.Controllers
             return View(await applicationDbContext.ToListAsync());
         }
 
+
         // GET: IhtiyacIcerik/Details/5
         public async Task<IActionResult> Details(int? id)
         {
