@@ -48,9 +48,10 @@ namespace Inciwiki.Areas.Identity.Pages.Account
 
             [Required]
             [DataType(DataType.Password)]
+            [Display(Name = "Şifre")]
             public string Password { get; set; }
 
-            [Display(Name = "Remember me?")]
+            [Display(Name = "Beni hatırla")]
             public bool RememberMe { get; set; }
         }
 
