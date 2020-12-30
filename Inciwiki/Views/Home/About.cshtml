@@ -1,4 +1,5 @@
-﻿@{
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@{
     ViewData["Title"] = "INCIWIKI";
 }
 <!-- ======= About Section ======= -->
@@ -10,28 +11,23 @@
                 <img src="~/img/logo/logo.png" class="img-fluid" alt="">
             </div>
             <div class="col-lg-6 pt-5 pt-lg-0">
-                <h3>Bilim ve bakımın buluştuğu noktaya hoş geldin!</h3>
+                <h3>@localizer["Baslik"]</h3>
                 <p>
-                    INCIWIKI, popüler cilt bakım ürünlerinin içerikleri hakkında bilgi veren ve kullanıcıların bu
-                    bileşenler hakkında yorum yapmasına olanak tanıyan bir web uygulamasıdır.
+                    @localizer["Bilgi"]
                 </p>
                 <div class="row">
                     <div class="col-md-6">
                         <i class="bx bx-receipt"></i>
-                        <h4>INCI'yi daha önce duymuş muydunuz?</h4>
+                        <h4>@localizer["Soru"]</h4>
                         <p>
-                            INCI, Kozmetik Bileşenlerin Uluslararası İsimlendirilmesi isminin kısaltımıdır. INCI isimleri
-                            Amerika Birleşik Devletleri, Avrupa Birliği, Çin, Japonya ve diğer birçok ülkede kozmetik
-                            ürün etiketlerinde içeriklerin listelenmesi için kullanılmaktadır. Birkaç istisna dışında, tüm
-                            ülkelerdeki INCI etiketleme adları aynıdır.
+                            @localizer["Aciklama"]
                         </p>
                     </div>
                     <div class="col-md-6">
                         <i class="bx bx-cube-alt"></i>
                         <h4>INCIWIKI</h4>
                         <p>
-                            INCIWIKI üzerindeki cilt bakım içerikleri, INCI isimleriyle yazılmıştır. Sen de bu içeriklere göz gezdirebilir,
-                            içerikleri oylayabilir ve cilt tipine göre topluluğumuzda yerini alabilirsin.
+                            @localizer["Tanim"]
                         </p>
                     </div>
                 </div>

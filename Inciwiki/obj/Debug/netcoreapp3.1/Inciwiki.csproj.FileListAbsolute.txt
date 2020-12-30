@@ -221,3 +221,12 @@ C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netco
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\bin\Debug\netcoreapp3.1\en\Inciwiki.resources.dll
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\bin\Debug\netcoreapp3.1\tr\Inciwiki.resources.dll
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Inciwiki.Resources.Views.Home.Index.en.resources
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Inciwiki.Resources.Views.Home.Index.tr.resources
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Inciwiki.csproj.GenerateResource.cache
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\en\Inciwiki.resources.dll
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\tr\Inciwiki.resources.dll
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Inciwiki.Resources.Views.Home.About.tr.resources
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Inciwiki.Resources.Views.Home.About.en.resources

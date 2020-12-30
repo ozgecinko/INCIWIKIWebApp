@@ -1,4 +1,5 @@
-﻿@{
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+@{
     ViewData["Title"] = "Ana Sayfa";
 }
 
@@ -8,9 +9,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1">
-                <h1>Bilim ve bakımın buluştuğu noktaya hoş geldin!</h1>
+                <h1>@localizer["Baslik"]</h1>
                 <h2>
-                    Cilt bakım meraklılarının en bilimsel ve doğru bilgileri bulduğu INCIWIKI, her geçen gün büyümeye devam ediyor.
+                    @localizer["Bilgiler"]
                 </h2>
                 <a asp-area="" asp-controller="Home" asp-action="About" class="btn-get-started scrollto">INCIWIKI</a>
             </div>
