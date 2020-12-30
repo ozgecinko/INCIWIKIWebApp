@@ -212,3 +212,12 @@ C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netco
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\Problem\Surfaktan.cshtml.g.cs
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\Problem\Yatistirici.cshtml.g.cs
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\IhtiyacIcerik\List.cshtml.g.cs
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\Role\Create.cshtml.g.cs
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\Role\Index.cshtml.g.cs
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\ConfirmEmail.cshtml.g.cs
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
