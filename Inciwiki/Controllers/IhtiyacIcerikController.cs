@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Inciwiki.Data;
 using Inciwiki.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Inciwiki.Controllers
 {
@@ -19,6 +20,7 @@ namespace Inciwiki.Controllers
             _context = context;
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: IhtiyacIcerik
         public async Task<IActionResult> Index()
         {
@@ -34,6 +36,7 @@ namespace Inciwiki.Controllers
         }
 
 
+        [Authorize(Roles = "Admin")]
         // GET: IhtiyacIcerik/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -54,6 +57,7 @@ namespace Inciwiki.Controllers
             return View(ihtiyacIcerik);
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: IhtiyacIcerik/Create
         public IActionResult Create()
         {
@@ -80,6 +84,7 @@ namespace Inciwiki.Controllers
             return View(ihtiyacIcerik);
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: IhtiyacIcerik/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -97,6 +102,7 @@ namespace Inciwiki.Controllers
             ViewData["IhtiyacId"] = new SelectList(_context.Ihtiyac, "Id", "IhtiyacAdi", ihtiyacIcerik.IhtiyacId);
             return View(ihtiyacIcerik);
         }
+
 
         // POST: IhtiyacIcerik/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
@@ -135,6 +141,7 @@ namespace Inciwiki.Controllers
             return View(ihtiyacIcerik);
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: IhtiyacIcerik/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {

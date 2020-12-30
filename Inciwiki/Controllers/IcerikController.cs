@@ -9,6 +9,7 @@ using Inciwiki.Data;
 using Inciwiki.Models;
 using Microsoft.AspNetCore.Hosting;
 using System.IO;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Inciwiki.Controllers
 {
@@ -24,6 +25,7 @@ namespace Inciwiki.Controllers
             _hostingEnvironment = hostingEnvironment;
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: Icerik
         public async Task<IActionResult> Index()
         {
@@ -36,6 +38,7 @@ namespace Inciwiki.Controllers
             return View(await _context.Icerik.ToListAsync());
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: Icerik/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -54,6 +57,7 @@ namespace Inciwiki.Controllers
             return View(icerik);
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: Icerik/Create
         public IActionResult Create()
         {
@@ -108,6 +112,7 @@ namespace Inciwiki.Controllers
         }
 
 
+        [Authorize(Roles = "Admin")]
         // GET: Icerik/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -159,6 +164,7 @@ namespace Inciwiki.Controllers
             return View(icerik);
         }
 
+        [Authorize(Roles = "Admin")]
         // GET: Icerik/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {

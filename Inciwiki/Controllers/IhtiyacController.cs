@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Inciwiki.Data;
 using Inciwiki.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Inciwiki.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class IhtiyacController : Controller
     {
         private readonly ApplicationDbContext _context;
