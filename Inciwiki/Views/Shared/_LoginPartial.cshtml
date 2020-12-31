@@ -1,24 +1,25 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
+@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
 
 
 @if (SignInManager.IsSignedIn(User))
 {<li class="get-started">
-     <a class="nav-link" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">@User.Identity.Name</a>
+        <a class="nav-link" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">@User.Identity.Name</a>
     </li>
     <li class="get-started">
         <form class="form-inline" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Action("Index", "Home", new { area = "" })">
-            <button type="submit" class="nav-link btn btn-link">Çıkış Yap</button>
+            <button type="submit" class="nav-link btn btn-link">@localizer["Cikis"]</button>
         </form>
     </li>
 }
 else
 {
     <li class="get-started">
-        <a class="nav-link" asp-area="Identity" asp-page="/Account/Register">Üye Ol</a>
+        <a class="nav-link" asp-area="Identity" asp-page="/Account/Register">@localizer["Uye"]</a>
     </li>
     <li class="get-started">
-        <a class="nav-link" asp-area="Identity" asp-page="/Account/Login">Giriş Yap</a>
+        <a class="nav-link" asp-area="Identity" asp-page="/Account/Login">@localizer["Giris"]</a>
     </li>
 }

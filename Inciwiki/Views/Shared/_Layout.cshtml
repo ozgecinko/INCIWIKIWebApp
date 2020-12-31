@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -33,25 +34,27 @@
 
             <nav class="nav-menu d-none d-lg-block">
                 <ul>
-                    <li class="active"><a asp-area="" asp-controller="Home" asp-action="Index">Ana Sayfa</a></li>
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index">@localizer["Home"]</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">INCIWIKI</a></li>
-                    <li><a asp-area="" asp-controller="Icerik" asp-action="List">İçerikler</a></li>
+                    <li><a asp-area="" asp-controller="Icerik" asp-action="List">@localizer["Icerik"]</a></li>
 
                     <li class="drop-down">
-                        <a asp-area="" asp-controller="IhtiyacIcerik" asp-action="List">İhtiyaçlar</a>
+                        <a asp-area="" asp-controller="IhtiyacIcerik" asp-action="List">@localizer["Ihtiyac"]</a>
                         <ul>
-                            <li><a asp-area="" asp-controller="Problem" asp-action="Akne">Akne Karşıtı</a></li>
-                            <li><a asp-area="" asp-controller="Problem" asp-action="Antibakteriyel">Antibakteriyel</a></li>
-                            <li><a asp-area="" asp-controller="Problem" asp-action="Antioksidan">Antioksidan</a></li>
-                            <li><a asp-area="" asp-controller="Problem" asp-action="CiltAydinlatici">Cilt Aydınlatıcı</a></li>
-                            <li><a asp-area="" asp-controller="Problem" asp-action="CiltIyilestirici">Cilt İyileştirici</a></li>
-                            <li><a asp-area="" asp-controller="Problem" asp-action="HucreYenileyici">Hücre Yenileyici</a></li>
-                            <li><a asp-area="" asp-controller="Problem" asp-action="Surfaktan">Sürfaktan</a></li>
-                            <li><a asp-area="" asp-controller="Problem" asp-action="Nemlendirici">Nemlendirici</a></li>
-                            <li><a asp-area="" asp-controller="Problem" asp-action="Yatistirici">Yatıştırıcı</a></li>
-                            <li><a asp-area="" asp-controller="Problem" asp-action="GunesKorumasi">Güneş Koruması</a></li>
+                            <li><a asp-area="" asp-controller="Problem" asp-action="Akne">@localizer["Acne"]</a></li>
+                            <li><a asp-area="" asp-controller="Problem" asp-action="Antibakteriyel">@localizer["Antibacterial"]</a></li>
+                            <li><a asp-area="" asp-controller="Problem" asp-action="Antioksidan">@localizer["Antioxidant"]</a></li>
+                            <li><a asp-area="" asp-controller="Problem" asp-action="CiltAydinlatici">@localizer["SkinBright"]</a></li>
+                            <li><a asp-area="" asp-controller="Problem" asp-action="CiltIyilestirici">@localizer["SkinHeal"]</a></li>
+                            <li><a asp-area="" asp-controller="Problem" asp-action="HucreYenileyici">@localizer["Cell"]</a></li>
+                            <li><a asp-area="" asp-controller="Problem" asp-action="Surfaktan">@localizer["Surfactan"]</a></li>
+                            <li><a asp-area="" asp-controller="Problem" asp-action="Nemlendirici">@localizer["Moust"]</a></li>
+                            <li><a asp-area="" asp-controller="Problem" asp-action="Yatistirici">@localizer["Soothing"]</a></li>
+                            <li><a asp-area="" asp-controller="Problem" asp-action="GunesKorumasi">@localizer["Sunscreen"]</a></li>
                         </ul>
                     </li>
+
+                    <li><partial name="_Cookie" /></li>
 
                     @if (User.Identity.IsAuthenticated)
                     {
@@ -91,8 +94,8 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-6">
-                        <h4>Bize Katıl!</h4>
-                        <p>Eğer E-mail adresini buraya yazarsan her ay popüler içeriklerle alakalı bildirimler alabilirsin.</p>
+                        <h4>@localizer["Join"]</h4>
+                        <p>@localizer["Bildirim"]</p>
                         <form action="" method="post">
                             <input type="email" name="email"><input type="submit" value="Abone Ol">
                         </form>
@@ -108,27 +111,27 @@
                     <div class="col-lg-3 col-md-6 footer-contact">
                         <h3>INCIWIKI</h3>
                         <p>
-                            INCIWIKI, popüler cilt bakım ürünlerinin içerikleri hakkında bilgi veren bir web uygulamasıdır.
+                            @localizer["INCIWIKI"]
                         </p>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-contact">
-                        <h3>INCI Nedir?</h3>
+                        <h3>INCI</h3>
                         <p>
-                            INCI, Kozmetik Bileşenlerin Uluslararası İsimlendirilmesi isminin kısaltımıdır.
+                            @localizer["INCI"]
                         </p>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-contact">
-                        <h3>İletişim</h3>
+                        <h3>@localizer["Contact"]</h3>
                         <p>
                             <strong>Email:</strong> inciwiki@info.com
                         </p>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Bizi Takip Edin</h4>
-                        <p>Bizi sosyal medyada da takip edin!</p>
+                        <h4>@localizer["Join"]</h4>
+                        <p>@localizer["Social"]</p>
                         <div class="social-links mt-3">
                             <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
                             <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
