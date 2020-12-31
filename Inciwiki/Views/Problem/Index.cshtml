@@ -1,0 +1,9 @@
+﻿@model IEnumerable<Inciwiki.Controllers.IhtiyacDTO>
+
+@foreach (var item in Model)
+{
+    <div class="row">
+        <p>Adı: @item.Adi</p>
+        <p>Icerikler: @item.Icerikler</p>
+    </div>
+}

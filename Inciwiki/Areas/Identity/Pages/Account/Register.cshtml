@@ -1,7 +1,9 @@
 ﻿@page
+
 @model RegisterModel
 @{
     ViewData["Title"] = "Üye Ol";
+    var roles = (List<IdentityRole>)ViewData["roles"];
 }
 
 <h1>@ViewData["Title"]</h1>
@@ -9,7 +11,7 @@
 <div class="row">
     <div class="col-md-4">
         <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
-            <h4>Yeni bir hesap oluşturun.</h4>
+            <h4>Yeni bir hesap oluştur.</h4>
             <hr />
             <div asp-validation-summary="All" class="text-danger"></div>
             <div class="form-group">
@@ -27,24 +29,76 @@
                 <input asp-for="Input.ConfirmPassword" class="form-control" />
                 <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
             </div>
-            <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+            <div class="form-group">
+                <label asp-for="Input.Name"></label>
+                <select asp-for="Input.Name" class="form-control" asp-items='new SelectList(roles,"Id","Name")'>
+                </select>
+                <span asp-validation-for="Input.Name" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Üye Ol</button>
         </form>
     </div>
-
-    <div class="col-md-6">
-        <i class="bx bx-receipt"></i>
-        <h4>INCI'yi daha önce duymuş muydunuz?</h4>
+    <div class="col-md-6 col-md-offset-2">
+        <i class="bx bx-cube-alt"></i>
+        <h4>INCIWIKI</h4>
         <p>
-            INCI, Kozmetik Bileşenlerin Uluslararası İsimlendirilmesi isminin kısaltımıdır. INCI isimleri
-            Amerika Birleşik Devletleri, Avrupa Birliği, Çin, Japonya ve diğer birçok ülkede kozmetik
-            ürün etiketlerinde içeriklerin listelenmesi için kullanılmaktadır. Birkaç istisna dışında, tüm
-            ülkelerdeki INCI etiketleme adları aynıdır.
+            INCIWIKI üzerindeki cilt bakım içerikleri, INCI isimleriyle yazılmıştır. Sen de bu içeriklere göz gezdirebilir,
+            içerikleri oylayabilir ve cilt tipine göre topluluğumuzda yerini alabilirsin.
         </p>
     </div>
-
 </div>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
+
+@*@page
+    @model RegisterModel
+    @{
+        ViewData["Title"] = "Üye Ol";
+    }
+
+    <h1>@ViewData["Title"]</h1>
+
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                <h4>Yeni bir hesap oluşturun.</h4>
+                <hr />
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Input.Email"></label>
+                    <input asp-for="Input.Email" class="form-control" />
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Input.Password"></label>
+                    <input asp-for="Input.Password" class="form-control" />
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Input.ConfirmPassword"></label>
+                    <input asp-for="Input.ConfirmPassword" class="form-control" />
+                    <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+            </form>
+        </div>
+
+        <div class="col-md-6">
+            <i class="bx bx-receipt"></i>
+            <h4>INCI'yi daha önce duymuş muydunuz?</h4>
+            <p>
+                INCI, Kozmetik Bileşenlerin Uluslararası İsimlendirilmesi isminin kısaltımıdır. INCI isimleri
+                Amerika Birleşik Devletleri, Avrupa Birliği, Çin, Japonya ve diğer birçok ülkede kozmetik
+                ürün etiketlerinde içeriklerin listelenmesi için kullanılmaktadır. Birkaç istisna dışında, tüm
+                ülkelerdeki INCI etiketleme adları aynıdır.
+            </p>
+        </div>
+
+    </div>
+
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+    }*@
 
