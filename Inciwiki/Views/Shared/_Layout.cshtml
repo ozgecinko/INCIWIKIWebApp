@@ -59,9 +59,9 @@
                         if (User.IsInRole("Admin"))
                         {
                             <li class="drop-down">
-                                <a href="">Admin</a>
+                                <a asp-area="" asp-controller="Admin" asp-action="Index">Admin</a>
                                 <ul>
-                                    <li><a asp-area="" asp-controller="Role" asp-action="Index">Üye Yetkilendirme</a></li>
+                                    <li><a asp-area="" asp-controller="Admin" asp-action="UsersList">Kullanıcı Listesi</a></li>
                                     <li><a asp-area="" asp-controller="Icerik" asp-action="Index">İçerikler</a></li>
                                     <li><a asp-area="" asp-controller="Ihtiyac" asp-action="Index">İhtiyaçlar</a></li>
                                     <li><a asp-area="" asp-controller="IhtiyacIcerik" asp-action="Index">İhtiyaçların İçerikleri</a></li>
@@ -69,6 +69,7 @@
                             </li>
                         }
                     }
+
                     <partial name="_LoginPartial" />
 
                     <li><partial name="_Cookie" /></li>

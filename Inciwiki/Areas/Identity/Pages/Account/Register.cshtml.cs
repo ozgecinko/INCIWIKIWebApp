@@ -85,7 +85,8 @@ namespace Inciwiki.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
-                    await _userManager.AddToRoleAsync(user, role.Name);
+                    //await _userManager.AddToRoleAsync(user, role.Name);
+                    await _userManager.AddToRoleAsync(user, "User");
 
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
@@ -114,7 +115,7 @@ namespace Inciwiki.Areas.Identity.Pages.Account
                 }
             }
 
-            ViewData["roles"] = _roleManager.Roles.ToList();
+            //ViewData["roles"] = _roleManager.Roles.ToList();
 
             // If we got this far, something failed, redisplay form  
             return Page();

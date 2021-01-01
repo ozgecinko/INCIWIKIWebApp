@@ -1,0 +1,21 @@
+﻿@page
+@model RegisterConfirmationModel
+@{
+    ViewData["Title"] = "Üyelik Onayı";
+}
+
+<h1>@ViewData["Title"]</h1>
+@{
+    if (@Model.DisplayConfirmAccountLink)
+    {
+    <p>
+        Üyeliğinizi onaylamazsanız giriş yapamazsınız. Lütfen üyeliğinizi onaylayınız. <a id="confirm-link" href="@Model.EmailConfirmationUrl">Buraya tıklayarak üyeliğinizi onaylayabilirsiniz.</a>
+    </p>
+    }
+    else
+    {
+<p>
+    Üyeliğinizi onaylamak için email adresinizi kontrol edin.
+</p>
+    }
+}

@@ -212,8 +212,6 @@ C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netco
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\Problem\Surfaktan.cshtml.g.cs
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\Problem\Yatistirici.cshtml.g.cs
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\IhtiyacIcerik\List.cshtml.g.cs
-C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\Role\Create.cshtml.g.cs
-C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\Role\Index.cshtml.g.cs
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\ConfirmEmail.cshtml.g.cs
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
@@ -236,3 +234,8 @@ C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netco
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Inciwiki.Resources.Views.Shared._LoginPartial.tr.resources
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Inciwiki.Resources.Views.Shared._LoginPartial.en.resources
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\Problem\Index.cshtml.g.cs
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Create.cshtml.g.cs
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\Admin\UsersList.cshtml.g.cs
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\RegisterConfirmation.cshtml.g.cs
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Inciwiki.Resources.Identity.Pages.Account.RegisterConfirmation.en.resources

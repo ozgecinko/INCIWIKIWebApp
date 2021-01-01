@@ -74,6 +74,8 @@ namespace Inciwiki.Controllers
             var applicationDbContext = _context.IhtiyacIcerik.Include(i => i.Icerik).Include(i => i.Ihtiyac);
             return View(await applicationDbContext.ToListAsync());
         }
+
+
         public IActionResult Index()
         {
             var ihtiyacList = (from g in _context.Ihtiyac

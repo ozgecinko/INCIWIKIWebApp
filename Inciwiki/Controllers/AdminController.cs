@@ -13,19 +13,38 @@ namespace Inciwiki.Controllers
     public class AdminController : Controller
     {
         private UserManager<IdentityUser> userManager;
-        private IUserValidator<IdentityUser> userValidator;
-        private IPasswordValidator<IdentityUser> passwordValidator;
-        private IPasswordHasher<IdentityUser> passwordHasher;
+        private RoleManager<IdentityRole> roleManager;
 
-        public AdminController(UserManager<IdentityUser> usrMgr,
-                IUserValidator<IdentityUser> userValid,
-                IPasswordValidator<IdentityUser> passValid,
-                IPasswordHasher<IdentityUser> passwordHash)
+        public AdminController(RoleManager<IdentityRole> roleManager, UserManager<IdentityUser> userManager)
         {
-            userManager = usrMgr;
-            userValidator = userValid;
-            passwordValidator = passValid;
-            passwordHasher = passwordHash;
+            this.roleManager = roleManager;
+            this.userManager = userManager;
+        }
+
+        [Authorize(Policy = "writepolicy")]
+        public IActionResult Index()
+        {
+            var roles = roleManager.Roles.ToList();
+            return View(roles);
+        }
+
+        public IActionResult UsersList()
+        {
+            var users = userManager.Users.ToList();
+            return View(users);
+        }
+
+        [Authorize(Policy = "writepolicy")]
+        public IActionResult Create()
+        {
+            return View(new IdentityRole());
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(IdentityRole role)
+        {
+            await roleManager.CreateAsync(role);
+            return RedirectToAction("Index");
         }
 
     }
