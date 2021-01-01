@@ -13,6 +13,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Inciwiki.Controllers
 {
+    [Authorize(Roles = "Admin")]
     public class IcerikController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -25,20 +26,13 @@ namespace Inciwiki.Controllers
             _hostingEnvironment = hostingEnvironment;
         }
 
-        [Authorize(Roles = "Admin")]
         // GET: Icerik
         public async Task<IActionResult> Index()
         {
             return View(await _context.Icerik.ToListAsync());
         }
         
-        // GET: Icerik List
-        public async Task<IActionResult> List()
-        {
-            return View(await _context.Icerik.ToListAsync());
-        }
 
-        [Authorize(Roles = "Admin")]
         // GET: Icerik/Details/5
         public async Task<IActionResult> Details(int? id)
         {
@@ -57,7 +51,7 @@ namespace Inciwiki.Controllers
             return View(icerik);
         }
 
-        [Authorize(Roles = "Admin")]
+
         // GET: Icerik/Create
         public IActionResult Create()
         {
@@ -112,7 +106,6 @@ namespace Inciwiki.Controllers
         }
 
 
-        [Authorize(Roles = "Admin")]
         // GET: Icerik/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -164,7 +157,7 @@ namespace Inciwiki.Controllers
             return View(icerik);
         }
 
-        [Authorize(Roles = "Admin")]
+
         // GET: Icerik/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {

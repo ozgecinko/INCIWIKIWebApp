@@ -1,4 +1,5 @@
 ﻿@inject Microsoft.AspNetCore.Mvc.Localization.IViewLocalizer localizer
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,38 +34,39 @@
             </div>
 
             <nav class="nav-menu d-none d-lg-block">
-                <ul>
+                <ul> 
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">@localizer["Home"]</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="About">INCIWIKI</a></li>
-                    <li><a asp-area="" asp-controller="Icerik" asp-action="List">@localizer["Icerik"]</a></li>
+                    <li><a asp-area="" asp-controller="Problem" asp-action="Icerikler">@localizer["Icerik"]</a></li>
 
                     <li class="drop-down">
-                        <a asp-area="" asp-controller="IhtiyacIcerik" asp-action="List">@localizer["Ihtiyac"]</a>
+                        <a asp-area="" asp-controller="Problem" asp-action="Ihtiyaclar">@localizer["Ihtiyac"]</a>
                         <ul>
-                            <li><a asp-area="" asp-controller="Problem" asp-action="Akne">@localizer["Acne"]</a></li>
-                            <li><a asp-area="" asp-controller="Problem" asp-action="Antibakteriyel">@localizer["Antibacterial"]</a></li>
-                            <li><a asp-area="" asp-controller="Problem" asp-action="Antioksidan">@localizer["Antioxidant"]</a></li>
-                            <li><a asp-area="" asp-controller="Problem" asp-action="CiltAydinlatici">@localizer["SkinBright"]</a></li>
-                            <li><a asp-area="" asp-controller="Problem" asp-action="CiltIyilestirici">@localizer["SkinHeal"]</a></li>
-                            <li><a asp-area="" asp-controller="Problem" asp-action="HucreYenileyici">@localizer["Cell"]</a></li>
-                            <li><a asp-area="" asp-controller="Problem" asp-action="Surfaktan">@localizer["Surfactan"]</a></li>
-                            <li><a asp-area="" asp-controller="Problem" asp-action="Nemlendirici">@localizer["Moust"]</a></li>
-                            <li><a asp-area="" asp-controller="Problem" asp-action="Yatistirici">@localizer["Soothing"]</a></li>
-                            <li><a asp-area="" asp-controller="Problem" asp-action="GunesKorumasi">@localizer["Sunscreen"]</a></li>
+                            <li><a asp-area="" asp-controller="Problem" asp-action="Index" asp-route-id="1">@localizer["Acne"]</a></li>
+                            <li><a asp-area="" asp-controller="Problem" asp-action="Index" asp-route-id="2">@localizer["Antibacterial"]</a></li>
+                            <li><a asp-area="" asp-controller="Problem" asp-action="Index" asp-route-id="3">@localizer["Antioxidant"]</a></li>
+                            <li><a asp-area="" asp-controller="Problem" asp-action="Index" asp-route-id="4">@localizer["SkinBright"]</a></li>
+                            <li><a asp-area="" asp-controller="Problem" asp-action="Index" asp-route-id="5">@localizer["SkinHeal"]</a></li>
+                            <li><a asp-area="" asp-controller="Problem" asp-action="Index" asp-route-id="6">@localizer["Cell"]</a></li>
+                            <li><a asp-area="" asp-controller="Problem" asp-action="Index" asp-route-id="7">@localizer["Surfactan"]</a></li>
+                            <li><a asp-area="" asp-controller="Problem" asp-action="Index" asp-route-id="8">@localizer["Moust"]</a></li>
+                            <li><a asp-area="" asp-controller="Problem" asp-action="Index" asp-route-id="9">@localizer["Soothing"]</a></li>
+                            <li><a asp-area="" asp-controller="Problem" asp-action="Index" asp-route-id="10">@localizer["Sunscreen"]</a></li>
                         </ul>
                     </li>
+
 
                     @if (User.Identity.IsAuthenticated)
                     {
                         if (User.IsInRole("Admin"))
                         {
                             <li class="drop-down">
-                                <a asp-area="" asp-controller="Admin" asp-action="Index">Admin</a>
+                                <a asp-area="" asp-controller="Admin" asp-action="Index">@localizer["Admin"]</a>
                                 <ul>
-                                    <li><a asp-area="" asp-controller="Admin" asp-action="UsersList">Kullanıcı Listesi</a></li>
-                                    <li><a asp-area="" asp-controller="Icerik" asp-action="Index">İçerikler</a></li>
-                                    <li><a asp-area="" asp-controller="Ihtiyac" asp-action="Index">İhtiyaçlar</a></li>
-                                    <li><a asp-area="" asp-controller="IhtiyacIcerik" asp-action="Index">İhtiyaçların İçerikleri</a></li>
+                                    <li><a asp-area="" asp-controller="Admin" asp-action="UsersList">@localizer["Kullanici"]</a></li>
+                                    <li><a asp-area="" asp-controller="Icerik" asp-action="Index">@localizer["Icerik"]</a></li>
+                                    <li><a asp-area="" asp-controller="Ihtiyac" asp-action="Index">@localizer["Ihtiyac"]</a></li>
+                                    <li><a asp-area="" asp-controller="IhtiyacIcerik" asp-action="Index">@localizer["IcerikIhtiyac"]</a></li>
                                 </ul>
                             </li>
                         }

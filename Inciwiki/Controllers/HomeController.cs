@@ -29,12 +29,6 @@ namespace Inciwiki.Controllers
             return View();
         }
 
-        [Authorize]
-        public IActionResult Secret()
-        {
-            return View();
-        }
-
         public IActionResult About()
         {
             return View();

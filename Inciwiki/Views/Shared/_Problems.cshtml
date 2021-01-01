@@ -1,15 +1,19 @@
 ﻿@model IEnumerable<Inciwiki.Models.IhtiyacIcerik>
+
+@{
+    ViewData["Title"] = "İhtiyaçlar";
+}
 <!-- ======= Services Section ======= -->
 <section id="services" class="services section-bg">
     <div class="container">
 
         <div class="section-title">
-            <h2>Antioksidan</h2>
+            <h2>Akne Karşıtı</h2>
         </div>
 
         @foreach (var item in Model)
         {
-            @if (item.Ihtiyac.IhtiyacAdi == "Antioksidan")
+            @if (item.Ihtiyac.IhtiyacAdi == "Akne Karşıtı")
             {
                 <div class="row">
 

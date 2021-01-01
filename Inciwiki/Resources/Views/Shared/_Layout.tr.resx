@@ -120,6 +120,9 @@
   <data name="Acne" xml:space="preserve">
     <value>Akne Karşıtı</value>
   </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Admin</value>
+  </data>
   <data name="Antibacterial" xml:space="preserve">
     <value>Antibakteriyel</value>
   </data>
@@ -141,6 +144,9 @@
   <data name="Icerik" xml:space="preserve">
     <value>İçerikler</value>
   </data>
+  <data name="IcerikIhtiyac" xml:space="preserve">
+    <value>İhtiyaçların İçerikleri</value>
+  </data>
   <data name="Ihtiyac" xml:space="preserve">
     <value>İhtiyaçlar</value>
   </data>
@@ -152,6 +158,9 @@
   </data>
   <data name="Join" xml:space="preserve">
     <value>Bize Katılın!</value>
+  </data>
+  <data name="Kullanici" xml:space="preserve">
+    <value>Kullanıcı Listesi</value>
   </data>
   <data name="Moust" xml:space="preserve">
     <value>Nemlendirici</value>

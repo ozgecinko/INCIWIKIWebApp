@@ -21,7 +21,7 @@ namespace Inciwiki.Controllers
             this.userManager = userManager;
         }
 
-        [Authorize(Policy = "writepolicy")]
+
         public IActionResult Index()
         {
             var roles = roleManager.Roles.ToList();
@@ -34,7 +34,7 @@ namespace Inciwiki.Controllers
             return View(users);
         }
 
-        [Authorize(Policy = "writepolicy")]
+
         public IActionResult Create()
         {
             return View(new IdentityRole());
