@@ -1,0 +1,8 @@
+Credits / Kaynaklar:
+
+Skincare Information: www.incidecoder.com
+INCI: https://en.wikipedia.org/wiki/International_Nomenclature_of_Cosmetic_Ingredients
+Template: https://bootstrapmade.com/
+Role Authorization: https://www.c-sharpcorner.com/article/adding-role-authorization-to-a-asp-net-mvc-core-application/
+Authentication: https://docs.microsoft.com/tr-tr/aspnet/core/security/authentication/customize-identity-model?view=aspnetcore-5.0
+Localization: https://youtu.be/Hy9G30nncMM

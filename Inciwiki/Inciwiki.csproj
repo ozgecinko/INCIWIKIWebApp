@@ -10,6 +10,24 @@
     <Compile Remove="Data\Migrations\20201227200525_EkleIlkTablolar.Designer.cs" />
     <Compile Remove="Data\Migrations\20201227201028_EkleTablolar.cs" />
     <Compile Remove="Data\Migrations\20201227201028_EkleTablolar.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210101155918_YabanciDilEkle.cs" />
+    <Compile Remove="Data\Migrations\20210101155918_YabanciDilEkle.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210101160025_YabanciDilIhtiyac.cs" />
+    <Compile Remove="Data\Migrations\20210101160025_YabanciDilIhtiyac.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210101161704_Language.cs" />
+    <Compile Remove="Data\Migrations\20210101161704_Language.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210101161839_Language.cs" />
+    <Compile Remove="Data\Migrations\20210101161839_Language.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210101162508_EkleYabanciDil.cs" />
+    <Compile Remove="Data\Migrations\20210101162508_EkleYabanciDil.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210101162732_Veritabani.cs" />
+    <Compile Remove="Data\Migrations\20210101162732_Veritabani.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210101164400_EkleLang.cs" />
+    <Compile Remove="Data\Migrations\20210101164400_EkleLang.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210101164459_Ekle.cs" />
+    <Compile Remove="Data\Migrations\20210101164459_Ekle.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210101164604_Deneme.cs" />
+    <Compile Remove="Data\Migrations\20210101164604_Deneme.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
