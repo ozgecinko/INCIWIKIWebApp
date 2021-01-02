@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -19,28 +20,19 @@ namespace Inciwiki.Controllers
 
         public IActionResult Index(int id)
         {
-            var applicationDbContext = _context.IhtiyacIcerik.Include(i => i.Icerik).Where(i => i.IhtiyacId ==  id);
+            var dil = CultureInfo.CurrentCulture;
+            string yabanciDil = dil.ToString();
+            var applicationDbContext = _context.IhtiyacIcerik.Include(i => i.Icerik).Where(i => i.IhtiyacId ==  id).Where(i => i.Icerik.Language == yabanciDil);
             return View(applicationDbContext.ToList());
-        }
-
-        public IActionResult Ihtiyaclar()
-        {
-            var applicationDbContext = _context.Ihtiyac.ToList();
-            return View(applicationDbContext);
         }
 
         public IActionResult Icerikler()
         {
-            var applicationDbContext = _context.Icerik.ToList();
+            var dil = CultureInfo.CurrentCulture;
+            string yabanciDil = dil.ToString();
+            var applicationDbContext = _context.Icerik.Where(i => i.Language == yabanciDil).ToList();
             return View(applicationDbContext);
         }
-
-
-        //public async Task<IActionResult> Nemlendirici()
-        //{
-        //    var applicationDbContext = _context.IhtiyacIcerik.Include(i => i.Icerik).Include(i => i.Ihtiyac);
-        //    return View(await applicationDbContext.ToListAsync());
-        //}
 
     }
 

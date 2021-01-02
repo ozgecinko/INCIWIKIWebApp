@@ -17,6 +17,5 @@ namespace Inciwiki.Data
         public DbSet<Icerik> Icerik { get; set; }
         public DbSet<Ihtiyac> Ihtiyac { get; set; }
         public DbSet<IhtiyacIcerik> IhtiyacIcerik { get; set; }
-
     }
 }

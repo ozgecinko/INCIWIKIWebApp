@@ -56,10 +56,15 @@ namespace Inciwiki
                 //services.AddControllersWithViews();
                 //services.AddRazorPages();
 
+            // Bu þekilde deðiþtirince tablo ekledi ama güncellemeye korktum. :D
+
                 services.AddDbContext<ApplicationDbContext>(options =>
                     options.UseSqlServer(
                         Configuration.GetConnectionString("DefaultConnection")));
-                services.AddIdentity<IdentityUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
+            services.AddIdentity<IdentityUser, IdentityRole>(options =>
+                        { options.SignIn.RequireConfirmedAccount = true;
+                            options.Stores.MaxLengthForKeys = 128;
+                        }) // (options => options.SignIn.RequireConfirmedAccount = true)
                      .AddDefaultUI()
                      .AddEntityFrameworkStores<ApplicationDbContext>()
                      .AddDefaultTokenProviders();
@@ -97,7 +102,7 @@ namespace Inciwiki
             app.UseAuthentication();
             app.UseAuthorization();
 
-            // Localization Ayarlarý
+             // Localization Ayarlarý
             //var supportedCultures = new[] { "tr", "en" };
             //var localizationOptions = new RequestLocalizationOptions().SetDefaultCulture(supportedCultures[0])
             //    .AddSupportedCultures(supportedCultures)

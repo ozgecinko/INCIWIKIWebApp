@@ -200,7 +200,6 @@ C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netco
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\IhtiyacIcerik\Details.cshtml.g.cs
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\IhtiyacIcerik\Edit.cshtml.g.cs
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\IhtiyacIcerik\Index.cshtml.g.cs
-C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\Problem\Nemlendirici.cshtml.g.cs
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\ConfirmEmail.cshtml.g.cs
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
@@ -229,4 +228,7 @@ C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netco
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Areas\Identity\Pages\Account\RegisterConfirmation.cshtml.g.cs
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Problems.cshtml.g.cs
 C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\Problem\Icerikler.cshtml.g.cs
-C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Razor\Views\Problem\Ihtiyaclar.cshtml.g.cs
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Inciwiki.Resources.Views.Problem.Icerikler.en.resources
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Inciwiki.Resources.Views.Problem.Icerikler.tr.resources
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Inciwiki.Resources.Views.Problem.Index.en.resources
+C:\Users\ÖZGE ÇİNKO\Desktop\Inciwiki Web Application\Inciwiki\obj\Debug\netcoreapp3.1\Inciwiki.Resources.Views.Problem.Index.tr.resources

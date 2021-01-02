@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Inciwiki.Controllers
 {
-    //[Authorize(Roles ="Admin")]
+    [Authorize(Roles ="Admin")]
     public class RoleController : Controller
     {
         RoleManager<IdentityRole> roleManager;
@@ -18,14 +18,13 @@ namespace Inciwiki.Controllers
             this.roleManager = roleManager;
         }
 
-        [Authorize(Policy = "writepolicy")]
+
         public IActionResult Index()
         {
             var roles = roleManager.Roles.ToList();
             return View(roles);
         }
 
-        [Authorize(Policy = "writepolicy")]
         public IActionResult Create()
         {
             return View(new IdentityRole());

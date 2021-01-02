@@ -28,8 +28,6 @@ namespace Inciwiki.Controllers
             var applicationDbContext = _context.IhtiyacIcerik.Include(i => i.Icerik).Include(i => i.Ihtiyac);
             return View(await applicationDbContext.ToListAsync());
         }
-
-
         
         // GET: IhtiyacIcerik/Details/5
         public async Task<IActionResult> Details(int? id)

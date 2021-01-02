@@ -28,6 +28,18 @@
     <Compile Remove="Data\Migrations\20210101164459_Ekle.Designer.cs" />
     <Compile Remove="Data\Migrations\20210101164604_Deneme.cs" />
     <Compile Remove="Data\Migrations\20210101164604_Deneme.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210101210819_IcerikText.cs" />
+    <Compile Remove="Data\Migrations\20210101210819_IcerikText.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210101212559_Ekle.cs" />
+    <Compile Remove="Data\Migrations\20210101212559_Ekle.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210101213042_IcerikTEXT.cs" />
+    <Compile Remove="Data\Migrations\20210101213042_IcerikTEXT.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210101213854_Deneme.cs" />
+    <Compile Remove="Data\Migrations\20210101213854_Deneme.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210102120350_Deneme.cs" />
+    <Compile Remove="Data\Migrations\20210102120350_Deneme.Designer.cs" />
+    <Compile Remove="Data\Migrations\20210102120449_Ekle.cs" />
+    <Compile Remove="Data\Migrations\20210102120449_Ekle.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

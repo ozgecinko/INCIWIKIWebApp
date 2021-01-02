@@ -78,7 +78,7 @@ namespace Inciwiki.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,IcerikAdi,Aciklamasi,IcerikResmi,Puani")] Icerik icerik)
+        public async Task<IActionResult> Create([Bind("Id,IcerikAdi,Aciklamasi,IcerikResmi,Puani,Language")] Icerik icerik)
         {
             if (ModelState.IsValid)
             {
@@ -127,7 +127,7 @@ namespace Inciwiki.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,IcerikAdi,Aciklamasi,IcerikResmi,Puani")] Icerik icerik)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,IcerikAdi,Aciklamasi,IcerikResmi,Puani,Language")] Icerik icerik)
         {
             if (id != icerik.Id)
             {

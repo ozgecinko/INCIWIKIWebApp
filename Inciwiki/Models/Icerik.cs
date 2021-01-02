@@ -12,5 +12,6 @@ namespace Inciwiki.Models
         public string Aciklamasi { get; set; }
         public string IcerikResmi { get; set; }
         public int? Puani { get; set; }
+        public string Language { get; set; }
     }
 }
